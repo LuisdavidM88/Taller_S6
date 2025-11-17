@@ -1,5 +1,4 @@
 public class Producto {
-    // Datos del producto y ventas de los últimos 3 meses
     private int id;
     private String nombre;
     private double precio;
@@ -7,7 +6,6 @@ public class Producto {
     private int ventasMes2;
     private int ventasMes3;
 
-    // Constructor cuando aún no tiene ventas registradas
     public Producto(int id, String nombre, double precio) {
         this.id = id;
         this.nombre = nombre;
@@ -58,7 +56,6 @@ public class Producto {
         return ventasMes1 + ventasMes2 + ventasMes3;
     }
 
-    // Representación del producto como texto
     @Override
     public String toString() {
         return "Producto id: " + id +
